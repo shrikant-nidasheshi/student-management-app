@@ -27,7 +27,7 @@ app.get("/health", (req, res) => {
   res.status(200).json({ status: "OK", timestamp: new Date().toISOString() });
 });
 
-app.use((req, res) => res.status(404).json({ message: "Route not found..." }));
+// app.use((req, res) => res.status(404).json({ message: "Route not found..." }));
 
 app.use((err, req, res, next) => {
   console.error("Unhandled error:", err.message);
