@@ -18,9 +18,9 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use("/auth", authRoutes);
-app.use("/student", studentRoutes);
-app.use("/admin", adminRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/student", studentRoutes);
+app.use("/api/admin", adminRoutes);
 
 // Health check
 app.get("/health", (req, res) => {
