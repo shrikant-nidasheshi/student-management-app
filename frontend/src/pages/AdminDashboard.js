@@ -21,6 +21,8 @@ const AdminDashboard = () => {
   const [message, setMessage] = useState({ text:"", type:"" });
   const [loading, setLoading] = useState(false);
 
+  // useEffect(() => { fetchStudents(); fetchCourses(); }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => { fetchStudents(); fetchCourses(); }, []);
 
   const showMsg = (text, type="success") => {
