@@ -14,6 +14,7 @@ const pool = new Pool({
   database: process.env.DB_NAME,
   // Uncomment below line for AWS RDS PostgreSQL:
   // ssl: { rejectUnauthorized: false }
+   ssl: { rejectUnauthorized: false }
 });
 
 // Test the connection on startup
